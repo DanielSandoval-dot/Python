@@ -2,7 +2,7 @@
 """
 Created on Sat Aug 12 16:31:50 2023
 
-@author: daniel
+@author: Daniel Sandoval
 """
 
 #import os
@@ -55,5 +55,22 @@ frets_count = 24
 o = f"Noam's banjo {string_count} strings and {frets_count} frets"
 print("with f at the beginning of the string and {} is possible to create strings that are updatable: " + o)
 
+ship = " The Yankee Clipper"
+a= ship.strip()
+print(".strip() gets rid of the initial spaces in the string: " + a)
 
-import git
+b = ship.lstrip()
+print(".lstrip() gets rid of left space: " +b)
+
+c = ship.rstrip()
+print(".rstrip() gets rid of right space: " + b)
+
+Word_string = "Here,Are,Some,Words"
+print("Word_string is: "+Word_string)
+
+d= Word_string.split(",")
+print("With .split(delimiter in quotes) you can divide a string and make it a list: " + str(d))
+print("After splitting, the variable is:" + str(type(Word_string.split(","))))
+
+e = ":".join(d)
+print("With delimiter in quotes.join -variable-, it is possible to make a list a string: " + e)
